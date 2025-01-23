@@ -64,7 +64,7 @@ const msg = {
 		}
 	};
  
-ipp.request(URI, ipp.serialize(msg2), function(err, res){
+ipp.request(URI, ipp.serialize(msg), function(err, res){
     if(err){
         return console.log(err);
     }

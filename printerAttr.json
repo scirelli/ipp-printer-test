@@ -1,0 +1,806 @@
+The spec is not clear on how to handle tag 18: printer-geo-location=undefined. Please open a github issue to help find a solution!
+The spec is not clear on how to handle tag 19: finishings-col-database=undefined. Please open a github issue to help find a solution!
+The spec is not clear on how to handle tag 19: finishings-col-ready=undefined. Please open a github issue to help find a solution!
+The spec is not clear on how to handle tag 19: finishings-col-default=undefined. Please open a github issue to help find a solution!
+{
+  "version": "2.0",
+  "statusCode": "successful-ok",
+  "id": 14485002,
+  "operation-attributes-tag": {
+    "attributes-charset": "utf-8",
+    "attributes-natural-language": "en"
+  },
+  "printer-attributes-tag": {
+    "printer-uri-supported": "ipp://localhost:60000/ipp/print",
+    "uri-security-supported": "none",
+    "uri-authentication-supported": "requesting-user-name",
+    "printer-settable-attributes-supported": "none",
+    "printer-name": "hp42fda0",
+    "printer-location": "",
+    "printer-more-info": "http://localhost:60000/#hId-pgAirPrint",
+    "printer-info": "HP LaserJet Pro M404-M405 [42FDA0]",
+    "printer-dns-sd-name": "HP LaserJet Pro M404-M405 [42FDA0]",
+    "printer-make-and-model": "HP LaserJet Pro M404-M405",
+    "printer-state": "idle",
+    "printer-state-reasons": "none",
+    "printer-state-message": "",
+    "ipp-versions-supported": [
+      "1.0",
+      "1.1",
+      "2.0"
+    ],
+    "operations-supported": [
+      "Print-Job",
+      "Validate-Job",
+      "Cancel-Job",
+      "Cancel-My-Jobs",
+      "Get-Job-Attributes",
+      "Get-Jobs",
+      "Get-Printer-Attributes",
+      "Create-Job",
+      "Send-Document",
+      "Set-Printer-Attributes",
+      16425,
+      16426,
+      "Print-URI",
+      "Send-URI",
+      "Close-Job",
+      "Identify-Printer"
+    ],
+    "charset-configured": "utf-8",
+    "charset-supported": "utf-8",
+    "natural-language-configured": "en",
+    "generated-natural-language-supported": [
+      "en",
+      "es",
+      "fr",
+      "pt",
+      "id",
+      "ko",
+      "zh-cn",
+      "zh-tw",
+      "th",
+      "it",
+      "de",
+      "da",
+      "nl",
+      "fi",
+      "no",
+      "sv",
+      "ru",
+      "tr",
+      "pl",
+      "cs",
+      "hu",
+      "ca",
+      "ro",
+      "hr",
+      "sl",
+      "sk",
+      "el",
+      "ar",
+      "he"
+    ],
+    "printer-strings-languages-supported": [
+      "en",
+      "es",
+      "fr",
+      "pt",
+      "id",
+      "ko",
+      "zh-cn",
+      "zh-tw",
+      "th",
+      "it",
+      "de",
+      "da",
+      "nl",
+      "fi",
+      "no",
+      "sv",
+      "ru",
+      "tr",
+      "pl",
+      "cs",
+      "hu",
+      "ca",
+      "ro",
+      "hr",
+      "sl",
+      "sk",
+      "el",
+      "ar",
+      "he"
+    ],
+    "printer-strings-uri": "http://localhost:60000/ipp/files/en.strings",
+    "document-format-default": "application/octet-stream",
+    "document-format-supported": [
+      "application/vnd.hp-PCL",
+      "application/vnd.hp-PCLXL",
+      "application/postscript",
+      "application/pdf",
+      "image/jpeg",
+      "image/urf",
+      "image/pwg-raster",
+      "application/PCLm",
+      "application/octet-stream"
+    ],
+    "document-format-version-supported": [
+      "PCL5c",
+      "PCLXL",
+      "PS/3",
+      "PDF/1.7",
+      "PJL",
+      "Automatic",
+      "JPEG",
+      "AppleRaster",
+      "PWGRaster",
+      "PCLM"
+    ],
+    "document-format-details-default": {
+      "document-format": "application/octet-stream"
+    },
+    "printer-is-accepting-jobs": true,
+    "queued-job-count": 0,
+    "pdl-override-supported": "attempted",
+    "printer-up-time": 3280357,
+    "printer-current-time": "1970-11-29T07:53:23.000Z",
+    "compression-supported": [
+      "none",
+      "deflate",
+      "gzip"
+    ],
+    "color-supported": false,
+    "job-creation-attributes-supported": [
+      "copies",
+      "finishings",
+      "finishings-col",
+      "job-pages-per-set",
+      "sides",
+      "orientation-requested",
+      "media",
+      "print-quality",
+      "printer-resolution",
+      "output-bin",
+      "media-col",
+      "output-mode",
+      "print-content-optimize",
+      "pclm-source-resolution",
+      "print-color-mode",
+      "ipp-attribute-fidelity",
+      "job-name",
+      "page-ranges",
+      "multiple-document-handling",
+      "job-mandatory-attributes",
+      "overrides",
+      "print-rendering-intent",
+      "print-scaling"
+    ],
+    "reference-uri-schemes-supported": [
+      "http",
+      "https"
+    ],
+    "printer-device-id": "MFG:HP;MDL:HP LaserJet Pro M404-M405;CMD:PCL5c,PCLXL,POSTSCRIPT,PDF,PJL,Automatic,JPEG,AppleRaster,PWGRaster,PCLM,802.3,DESKJET,DYN;CLS:PRINTER;DES:W1A53A;CID:HPLJPDLV1;LEDMDIS:USB#FF#04#01;MCT:PR;MCL:DI;MCV:5.0;SN:PHDBH22417;S:038888C48400000100101000000;Z:05000001,12000,17000000,181;",
+    "printer-alert": [
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other",
+      "code=unknown;severity=other;group=other"
+    ],
+    "printer-alert-description": [
+      "Sleep Mode",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Sleep Mode"
+    ],
+    "printer-uuid": "urn:uuid:2ed83c55-f841-5ec0-cca8-af11a03f336c",
+    "landscape-orientation-requested-preferred": 4,
+    "job-constraints-supported": [
+      {
+        "resolver-name": "fullbleed-sizes",
+        "media-top-margin": 0,
+        "media-bottom-margin": 0,
+        "media-left-margin": 0,
+        "media-right-margin": 0,
+        "media": [
+          "na_letter_8.5x11in",
+          "na_legal_8.5x14in",
+          "na_executive_7.25x10.5in",
+          "na_invoice_5.5x8.5in",
+          "na_foolscap_8.5x13in",
+          "na_index-4x6_4x6in",
+          "na_index-5x8_5x8in",
+          "iso_a4_210x297mm",
+          "iso_a5_148x210mm",
+          "iso_a6_105x148mm",
+          "jis_b5_182x257mm",
+          "jis_b6_128x182mm",
+          "om_small-photo_100x150mm",
+          "na_oficio_8.5x13.4in",
+          "om_16k_195x270mm",
+          "om_16k_184x260mm",
+          "roc_16k_7.75x10.75in",
+          "jpn_hagaki_100x148mm",
+          "jpn_oufuku_148x200mm",
+          "na_number-10_4.125x9.5in",
+          "na_monarch_3.875x7.5in",
+          "iso_b5_176x250mm",
+          "iso_c5_162x229mm",
+          "iso_dl_110x220mm"
+        ]
+      },
+      {
+        "resolver-name": "duplex-types",
+        "sides": [
+          "two-sided-short-edge",
+          "two-sided-long-edge"
+        ],
+        "media": [
+          "na_letter_8.5x11in",
+          "na_legal_8.5x14in",
+          "na_foolscap_8.5x13in",
+          "iso_a4_210x297mm"
+        ],
+        "media-type": [
+          "com.hp.stationery-heavyweight",
+          "com.hp.extra-heavy",
+          "labels",
+          "envelope",
+          "com.hp.rough"
+        ]
+      },
+      {
+        "resolver-name": "duplex-sizes",
+        "sides": [
+          "two-sided-short-edge",
+          "two-sided-long-edge"
+        ],
+        "media": [
+          "na_executive_7.25x10.5in",
+          "na_invoice_5.5x8.5in",
+          "na_index-4x6_4x6in",
+          "na_index-5x8_5x8in",
+          "iso_a5_148x210mm",
+          "iso_a6_105x148mm",
+          "jis_b5_182x257mm",
+          "jis_b6_128x182mm",
+          "om_small-photo_100x150mm",
+          "na_oficio_8.5x13.4in",
+          "om_16k_195x270mm",
+          "om_16k_184x260mm",
+          "roc_16k_7.75x10.75in",
+          "jpn_hagaki_100x148mm",
+          "jpn_oufuku_148x200mm",
+          "na_number-10_4.125x9.5in",
+          "na_monarch_3.875x7.5in",
+          "iso_b5_176x250mm",
+          "iso_c5_162x229mm",
+          "iso_dl_110x220mm"
+        ]
+      }
+    ],
+    "job-resolvers-supported": [
+      {
+        "resolver-name": "fullbleed-sizes",
+        "media-top-margin": 423,
+        "media-bottom-margin": 423,
+        "media-left-margin": 423,
+        "media-right-margin": 423
+      },
+      {
+        "resolver-name": "duplex-types",
+        "sides": "one-sided"
+      },
+      {
+        "resolver-name": "duplex-sizes",
+        "sides": "one-sided"
+      }
+    ],
+    "ipp-features-supported": [
+      "airprint-1.8",
+      "ipp-everywhere",
+      "page-overrides"
+    ],
+    "which-jobs-supported": [
+      "completed",
+      "not-completed",
+      "all"
+    ],
+    "job-ids-supported": true,
+    "requesting-user-uri-supported": true,
+    "multiple-operation-time-out-action": "abort-job",
+    "hp-pc-version-major": 0,
+    "hp-pc-version-minor": 6,
+    "hp-default-duplex-standard": true,
+    "hp-print-quality-supported": [
+      {
+        "type": 11,
+        "imaging-technology": 2005,
+        "display-string": 1005,
+        "optimal-resolution": 600
+      },
+      {
+        "type": 4,
+        "imaging-technology": 2001,
+        "display-string": 1000,
+        "optimal-resolution": 600
+      },
+      {
+        "type": 10,
+        "imaging-technology": 2002,
+        "display-string": 1002,
+        "optimal-resolution": 1200
+      }
+    ],
+    "mopria-certified": "2.0",
+    "preferred-attributes-supported": false,
+    "printer-config-change-date-time": "2014-02-01T00:00:10.000Z",
+    "printer-config-change-time": 0,
+    "printer-state-change-date-time": "2014-03-07T08:05:39.000Z",
+    "printer-state-change-time": 3225807,
+    "document-password-supported": 0,
+    "printer-kind": "document",
+    "media-supported": [
+      "na_letter_8.5x11in",
+      "na_legal_8.5x14in",
+      "na_executive_7.25x10.5in",
+      "na_invoice_5.5x8.5in",
+      "na_foolscap_8.5x13in",
+      "na_index-4x6_4x6in",
+      "na_index-5x8_5x8in",
+      "iso_a4_210x297mm",
+      "iso_a5_148x210mm",
+      "iso_a6_105x148mm",
+      "jis_b5_182x257mm",
+      "jis_b6_128x182mm",
+      "om_small-photo_100x150mm",
+      "na_oficio_8.5x13.4in",
+      "om_16k_195x270mm",
+      "om_16k_184x260mm",
+      "roc_16k_7.75x10.75in",
+      "jpn_hagaki_100x148mm",
+      "jpn_oufuku_148x200mm",
+      "na_number-10_4.125x9.5in",
+      "na_monarch_3.875x7.5in",
+      "iso_b5_176x250mm",
+      "iso_c5_162x229mm",
+      "iso_dl_110x220mm",
+      "custom_min_3.875x5.8267in",
+      "custom_max_8.5x14in"
+    ],
+    "media-default": "na_letter_8.5x11in",
+    "media-col-supported": [
+      "media-type",
+      "media-size",
+      "media-top-margin",
+      "media-left-margin",
+      "media-right-margin",
+      "media-bottom-margin",
+      "media-source",
+      "media-size-name"
+    ],
+    "media-col-default": {
+      "media-size": {
+        "x-dimension": 21590,
+        "y-dimension": 27940
+      },
+      "media-top-margin": 423,
+      "media-bottom-margin": 423,
+      "media-left-margin": 423,
+      "media-right-margin": 423,
+      "media-source": "auto",
+      "media-type": "stationery"
+    },
+    "media-left-margin-supported": 423,
+    "media-right-margin-supported": 423,
+    "media-top-margin-supported": 423,
+    "media-bottom-margin-supported": 423,
+    "media-source-supported": [
+      "tray-1",
+      "tray-2",
+      "auto"
+    ],
+    "media-type-supported": [
+      "stationery",
+      "com.hp.stationery-lightweight",
+      "com.hp.ecosmart-lite",
+      "com.hp.intermediate",
+      "com.hp.midweight",
+      "com.hp.stationery-heavyweight",
+      "com.hp.extra-heavy",
+      "labels",
+      "stationery-letterhead",
+      "envelope",
+      "stationery-preprinted",
+      "stationery-prepunched",
+      "stationery-colored",
+      "com.hp.stationery-bond",
+      "com.hp.recycled",
+      "com.hp.rough"
+    ],
+    "media-size-supported": [
+      {
+        "x-dimension": 21590,
+        "y-dimension": 27940
+      },
+      {
+        "x-dimension": 21590,
+        "y-dimension": 35560
+      },
+      {
+        "x-dimension": 18415,
+        "y-dimension": 26670
+      },
+      {
+        "x-dimension": 13970,
+        "y-dimension": 21590
+      },
+      {
+        "x-dimension": 21590,
+        "y-dimension": 33020
+      },
+      {
+        "x-dimension": 10160,
+        "y-dimension": 15240
+      },
+      {
+        "x-dimension": 12700,
+        "y-dimension": 20320
+      },
+      {
+        "x-dimension": 21000,
+        "y-dimension": 29700
+      },
+      {
+        "x-dimension": 14800,
+        "y-dimension": 21000
+      },
+      {
+        "x-dimension": 10500,
+        "y-dimension": 14800
+      },
+      {
+        "x-dimension": 18200,
+        "y-dimension": 25700
+      },
+      {
+        "x-dimension": 12800,
+        "y-dimension": 18200
+      },
+      {
+        "x-dimension": 10000,
+        "y-dimension": 15000
+      },
+      {
+        "x-dimension": 21590,
+        "y-dimension": 34036
+      },
+      {
+        "x-dimension": 19500,
+        "y-dimension": 27000
+      },
+      {
+        "x-dimension": 18400,
+        "y-dimension": 26000
+      },
+      {
+        "x-dimension": 19685,
+        "y-dimension": 27305
+      },
+      {
+        "x-dimension": 10000,
+        "y-dimension": 14800
+      },
+      {
+        "x-dimension": 14800,
+        "y-dimension": 20000
+      },
+      {
+        "x-dimension": 10477,
+        "y-dimension": 24130
+      },
+      {
+        "x-dimension": 9842,
+        "y-dimension": 19050
+      },
+      {
+        "x-dimension": 17600,
+        "y-dimension": 25000
+      },
+      {
+        "x-dimension": 16200,
+        "y-dimension": 22900
+      },
+      {
+        "x-dimension": 11000,
+        "y-dimension": 22000
+      },
+      {
+        "x-dimension": [
+          9842,
+          21590
+        ],
+        "y-dimension": [
+          14799,
+          35560
+        ]
+      }
+    ],
+    "finishings-col-supported": "finishing-template",
+    "printer-finisher": "",
+    "printer-finisher-description": "",
+    "pages-per-minute": 40,
+    "jpeg-k-octets-supported": [
+      0,
+      16384
+    ],
+    "jpeg-x-dimension-supported": [
+      0,
+      16384
+    ],
+    "jpeg-y-dimension-supported": [
+      1,
+      16384
+    ],
+    "pdf-k-octets-supported": [
+      0,
+      65536
+    ],
+    "pdf-size-constraints": [
+      0,
+      65536
+    ],
+    "pdf-fit-to-page-default": false,
+    "pdf-fit-to-page-supported": false,
+    "pdf-versions-supported": [
+      "iso-32000-1_2008",
+      "adobe-1.7",
+      "adobe-1.6",
+      "adobe-1.5",
+      "iso-19005-1_2005",
+      "adobe-1.4",
+      "adobe-1.3",
+      "adobe-1.2"
+    ],
+    "urf-supported": [
+      "CP1",
+      "MT1-2-8-9-10-11",
+      "PQ3-4-5",
+      "RS600",
+      "SRGB24",
+      "OB10",
+      "W8",
+      "DEVW8",
+      "DEVRGB24",
+      "ADOBERGB24",
+      "DM3",
+      "IS19-1-2",
+      "V1.4",
+      "FN3"
+    ],
+    "marker-names": "black cartridge",
+    "marker-colors": "#000000",
+    "marker-types": "toner-cartridge",
+    "marker-low-levels": 2,
+    "marker-high-levels": 100,
+    "marker-levels": 90,
+    "printer-supply": "type=tonerCartridge;maxcapacity=100;level=90;class=supplyThatIsConsumed;unit=percent;colorantname=black;",
+    "printer-supply-description": "Black Cartridge",
+    "printer-firmware-name": "MOGAMIXXXN002.2445A.00",
+    "printer-firmware-string-version": "MOGAMIXXXN002.2445A.00",
+    "printer-firmware-version": "MOGAMIXXXN002.2445A.00",
+    "printer-input-tray": [
+      "type=unRemovableBin;dimunit=micrometers;mediafeed=0;mediaxfeed=0;maxcapacity=-2;level=-2;unit=percent;status=19;name=Tray 1",
+      "type=sheetFeedAutoNonRemovable;dimunit=micrometers;mediafeed=0;mediaxfeed=0;maxcapacity=-2;level=-2;unit=percent;status=0;name=Tray 2",
+      "type=other;dimunit=micrometers;mediafeed=-2;mediaxfeed=-2;maxcapacity=-2;level=-2;unit=percent;status=0;name=auto"
+    ],
+    "printer-output-tray": "type=unknown;maxcapacity=-2;remaining=-2;status=5;stackingorder=unknown;pagedelivery=faceDown;name=OutputTray1",
+    "copies-default": 1,
+    "finishings-default": "none",
+    "orientation-requested-default": "portrait",
+    "print-quality-default": "normal",
+    "printer-resolution-default": [
+      600,
+      600,
+      "dpi"
+    ],
+    "sides-default": "one-sided",
+    "output-bin-default": "face-down",
+    "output-mode-default": "auto",
+    "print-color-mode-default": "auto",
+    "multiple-document-handling-default": "separate-documents-uncollated-copies",
+    "number-up-default": 1,
+    "presentation-direction-number-up-default": "toright-tobottom",
+    "print-rendering-intent-default": "auto",
+    "print-scaling-default": "auto",
+    "job-account-id-default": "",
+    "job-accounting-user-id-default": "",
+    "copies-supported": [
+      1,
+      99
+    ],
+    "finishings-supported": "none",
+    "job-pages-per-set-supported": false,
+    "orientation-requested-supported": [
+      "portrait",
+      "landscape",
+      "reverse-landscape",
+      "reverse-portrait",
+      "none"
+    ],
+    "print-quality-supported": [
+      "draft",
+      "normal",
+      "high"
+    ],
+    "printer-resolution-supported": [
+      [
+        600,
+        600,
+        "dpi"
+      ],
+      [
+        600,
+        600,
+        "dpi"
+      ],
+      [
+        1200,
+        1200,
+        "dpi"
+      ]
+    ],
+    "sides-supported": [
+      "one-sided",
+      "two-sided-short-edge",
+      "two-sided-long-edge"
+    ],
+    "output-bin-supported": "face-down",
+    "output-mode-supported": [
+      "auto",
+      "auto-monochrome",
+      "monochrome"
+    ],
+    "print-color-mode-supported": [
+      "auto",
+      "auto-monochrome",
+      "monochrome"
+    ],
+    "page-ranges-supported": true,
+    "multiple-document-handling-supported": [
+      "separate-documents-uncollated-copies",
+      "separate-documents-collated-copies"
+    ],
+    "number-up-supported": 1,
+    "presentation-direction-number-up-supported": "toright-tobottom",
+    "overrides-supported": [
+      "pages",
+      "document-numbers",
+      "media",
+      "media-col"
+    ],
+    "print-rendering-intent-supported": [
+      "auto",
+      "perceptual"
+    ],
+    "print-scaling-supported": [
+      "auto",
+      "auto-fit",
+      "fill",
+      "fit",
+      "none"
+    ],
+    "printer-icons": [
+      "http://localhost:60000/images/printer-small.png",
+      "http://localhost:60000/images/printer.png",
+      "http://localhost:60000/images/printer-large.png"
+    ],
+    "printer-supply-info-uri": "http://localhost:60000/#hId-pgConsumables",
+    "print-content-optimize-default": "auto",
+    "print-content-optimize-supported": [
+      "auto",
+      "photo",
+      "graphics",
+      "text",
+      "text-and-graphics"
+    ],
+    "job-account-id-supported": false,
+    "job-accounting-user-id-supported": false,
+    "pwg-raster-document-sheet-back": "rotated",
+    "pwg-raster-document-type-supported": [
+      "sgray_8",
+      "srgb_8",
+      "adobe-rgb_8",
+      "rgb_8"
+    ],
+    "pwg-raster-document-resolution-supported": [
+      600,
+      600,
+      "dpi"
+    ],
+    "epcl-version-supported": "1.0",
+    "manual-duplex-supported": false,
+    "pclm-source-resolution-supported": [
+      600,
+      600,
+      "dpi"
+    ],
+    "pclm-source-resolution-default": [
+      600,
+      600,
+      "dpi"
+    ],
+    "pclm-strip-height-supported": 64,
+    "pclm-strip-height-preferred": 64,
+    "pclm-raster-back-side": "rotated",
+    "pclm-compression-method-preferred": [
+      "jpeg",
+      "flate",
+      "rle"
+    ],
+    "document-format-varying-attributes": [
+      "copies",
+      "orientation-requested",
+      "job-pages-per-set"
+    ],
+    "printer-get-attributes-supported": "document-format",
+    "printer-organization": "",
+    "printer-organizational-unit": "",
+    "identify-actions-default": "display",
+    "identify-actions-supported": "display",
+    "limit-operations-supported": 10,
+    "multiple-operation-time-out": 120,
+    "multiple-document-jobs-supported": false,
+    "jpeg-features-supported": [
+      "arithmetic",
+      "cmyk",
+      "progressive"
+    ]
+  }
+}
