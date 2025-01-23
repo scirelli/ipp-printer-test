@@ -2,6 +2,8 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
+const util = require('node:util');
+const {setTimeout} = require('node:timers/promises');
 const ipp = require('ipp');
 const PDFDocument = require('pdfkit');
 const { buffer } = require('node:stream/consumers');  
@@ -40,38 +42,57 @@ async function printAPage() {
 	});
 }
 
-const msg = {
-		'operation':'Get-Printer-Attributes',
-		'operation-attributes-tag': {
-			'attributes-charset': 'utf-8',
-			'attributes-natural-language': 'en',
-			'printer-uri': URI
-		}
-	},
-	msg2 = {
-		'operation':'Get-Printer-Attributes',
-		'operation-attributes-tag': {
-			'attributes-charset': 'utf-8',
-			'attributes-natural-language': 'en',
-			'printer-uri': URI,
-			'requested-attributes': [
-				'queued-job-count',
-				'marker-levels',
-				'printer-state',
-				'printer-state-reasons',
-				'printer-up-time'
-			]
-		}
-	};
- 
-ipp.request(URI, ipp.serialize(msg), function(err, res){
-    if(err){
-        return console.log(err);
-    }
-    console.log(JSON.stringify(res,null,2));
-});
+async function printerStatus(){
+	const msgAllInfo = {
+			'operation':'Get-Printer-Attributes',
+			'operation-attributes-tag': {
+				'attributes-charset': 'utf-8',
+				'attributes-natural-language': 'en',
+				'printer-uri': URI
+			}
+		},
+		msgStatus = {
+			'operation':'Get-Printer-Attributes',
+			'operation-attributes-tag': {
+				'attributes-charset': 'utf-8',
+				'attributes-natural-language': 'en',
+				'printer-uri': URI,
+				'requested-attributes': [
+					'queued-job-count',
+					'marker-levels',
+					'printer-state',
+					'printer-state-reasons',
+					'printer-up-time'
+				]
+			}
+		};
+	 
+	return new Promise((resolve, reject) => {
+		ipp.request(URI, ipp.serialize(msgStatus), function(err, res){
+			if(err){
+				return reject(err);
+			}
+			resolve(res);
+		});
+	});
+}
 
-/*
+async function pollStatus(delay=500, limit=15) {
+	if(limit<=0) return;
+	return printerStatus()
+		.then(res=>{
+			console.log(`===================\nState: ${res['printer-attributes-tag']['printer-state']}\nReason: ${res['printer-attributes-tag']['printer-state-reasons']}\n`);
+		})
+		.then(()=>setTimeout(500, true))
+		.then(()=>pollStatus(delay, limit-1));
+}
+
+printerStatus()
+	.then(printAPage)
+  .then(pollStatus)
+	.catch(console.error);
+
+/* Interesting sections of full respose
 "printer-uri-supported": "ipp://localhost:60000/ipp/print",
     "uri-security-supported": "none",
     "uri-authentication-supported": "requesting-user-name",
@@ -146,6 +167,4 @@ ipp.request(URI, ipp.serialize(msg), function(err, res){
 "sides-default": "one-sided",
     "output-bin-default": "face-down",
   "printer-supply-info-uri": "http://localhost:60000/#hId-pgConsumables"
-
-
  */
